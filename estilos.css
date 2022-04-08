@@ -1,0 +1,77 @@
+/* Estilos generales */
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;   
+}
+body {
+    width: 100%;
+    height: 100vh;}
+    
+
+
+     section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns:;
+    grid-template-rows:10% 10% 65% 15%; /*4FILAS SIEMPRE*/
+
+    grid-template-areas:
+    "cabeza" "navegacion" "cuerpo" "pie"
+
+ }
+ .a { 
+    grid-area:cabeza; /*GRID AREA DE CABEZA*/
+    background:blue;
+    display: flex;
+ 
+    justify-content:center;
+    align-content: center;
+    background-size: cover;
+     }
+
+ .b { 
+    grid-area:navegacion; /*GRID AREA DE NAVEGACION*/
+    background:red; 
+    display: flex;
+    padding: 15px;
+    flex-wrap: nowrap;
+   
+    justify-content:safe right;
+    align-content: right;
+    background-size: cover;}
+
+ .c { 
+    grid-area:cuerpo;  /*GRID AREA DEL CUERPO*/
+    background:green;
+    display: flex;
+
+    flex-flow: column nowrap;
+    flex-direction: row;
+    flex-flow: ;
+    background-size: cover; }
+
+ .d { 
+    grid-area:pie; /*GRID AREA DEL PIE*/
+    background:orange; 
+    display: flex;
+    flex-direction: column;
+   
+    justify-content:right;
+    align-content: right;
+    background-size: cover;}
+
+
+ 
+
+
+
